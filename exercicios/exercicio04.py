@@ -17,11 +17,7 @@ Se nada for digitado em nome ou idade:
 nome = input("Digite seu nome: ")
 idade = input("Digite sua idade: ")
 
-
-
 tem_espaco = " " in nome
-
-
 
 qt_letras = len(nome)
 
