@@ -4,10 +4,15 @@ informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
 numero_str = input('Digite um número inteiro: ')
+numero_int = int(numero_str)
+numero_par = numero_int % 2 == 0
+numero_impar = numero_int % 2 != 0
 
 try:
-    numero_int = int(numero_str)
-    print('Inteiro:', numero_int)
+    if numero_par:
+        print('O número:', numero_int, 'é par')
+    elif numero_impar:
+        print('O número:', numero_int, 'é ímpar')
 except:
     print('Entrada inválida!')
 
